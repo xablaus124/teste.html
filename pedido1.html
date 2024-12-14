@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Boscardin</title>
+  <script src="pedido.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+  <div id="conteudo">
+
+    <h2>Sara Boscardin Patines, você aceita namorar comigo?
+
+    </h2>
+    <button class="btn" onclick="sim(this)">SIM</button>
+    <button class="btn" onclick="desviar(this)" onmouseover="desviar(this)">NÂO</button>
+  </div>
+</body>
+<style> 
+  #conteudo {
+  background-image: url(./real.png);
+  width: 100%;
+  height: 78%;
+  position: fixed;
+  TOP: 0;
+  LEFT: 0;
+  padding: 10PX;
+  text-align: center;
+  font-family: cursive;
+  color: #000000;
+  padding-top: 18%;
+}
+
+.btn {
+  padding: 7px;
+  background: rgb(165, 45, 155);
+  color: rgb(255, 255, 255);
+  width: 60px;
+  border-radius: 30px;
+  font-family: cursive;
+  border-color: rgb(165, 45, 155) ;
+
+}
+
+</style>
+<script>
+function sim(t) {
+
+alert("Infelizmente n posso te dar um beijinho agr 😔, mas Te Amo Meu Amor")
+
+}
+
+function desviar(t) {
+var btn = t;
+btn.style.position = 'absolute';
+btn.style.top = posicaoAleatoria(10, 70);
+btn.style.left = posicaoAleatoria(10, 70);
+console.log("opa");
+}
+
+function posicaoAleatoria(min, max) {
+return (Math.random() * (min, max) + min) + "%";
+}
+
+
+</script>
+</html>
